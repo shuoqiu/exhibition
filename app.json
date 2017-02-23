@@ -1,0 +1,33 @@
+{
+  "pages":[
+    "pages/main/main",
+    "pages/page-next/page-next",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "red",
+    "navigationBarTitleText": "朕的赞赏",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "red",
+    "borderStyle": "white",
+    "backgroundColor": "white",
+    "list": [{
+      "pagePath": "pages/main/main",
+      "text": "主页",
+      "iconPath": "images/头像1.png",
+      "selectedIconPath": "images/头像2.png"
+    },
+    {
+      "pagePath": "pages/page-next/page-next",
+      "text": "下一页",
+      "iconPath": "images/头像0.png",
+      "selectedIconPath": "images/头像3.png"
+
+    }]
+  }
+}

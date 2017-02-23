@@ -1,0 +1,204 @@
+<view class="zhidinglan">
+    <view class="top">
+        <block wx:for="{{shuju}}">
+            <view class="top-items" bindtap="toMe">
+                <text>{{item.text}}</text>
+            </view>
+        </block>
+    </view>
+</view>
+
+
+    
+<view class="cell">
+    <view class="cell-frame">
+        <view class="cell-top" hidden="{{false}}">
+            <view class="changjing">工作</view>
+            <view class="time">1天前</view>
+                <view wx:if="{{7>6}}">
+                    <image src="../../images/星.png" class="shoucangStarIcon" hidden="{{true}}"></image>
+                </view>
+                <view wx:else>
+                    <image src="../../images/星-selected.png" class="shoucangStarIcon" hidden="{{true}}"></image>
+                </view>
+
+        </view>
+
+        <view class="neirong" hidden="{{false}}">
+            <text class="neirong-holder">{{"挣得钱三分之二花在买衣服鞋子包包化妆品，三分之一平常吃喝玩，女生不都是这样吗？"}}</text>
+        </view>
+
+        <view class="line" hidden="{{true}}"></view>
+
+        <view class="jingdian-tell" hidden="{{true}}">
+            <text class="jingdian-tell-holder">{{"中学门口，校长和刚退休的老师打招呼：咋啦？退休了还不舍得离开学校，来转转？退休女老师：别提了，太丢人了，儿子不听话，班主任让来一趟......."}}</text>
+        </view>
+
+        <view class="operate-area">
+            <block wx:for="{{operate}}">
+                <view class="find">
+                    <image src="{{item.image}}" class="find-image"></image>
+                    <text class="find-data" class="find-text">{{item.num}}</text>
+                </view>
+            </block>
+            <text class="back-time" hidden="{{true}}">1天前</text>
+            <view class="editBtn" hidden="{{true}}">编辑</view>
+        </view>
+
+        <view class="zan-holder">
+            <view class="image-holder">
+                <block wx:for="{{zan_images}}">
+                    <image src="{{item.imagePath}}" class="zan-headImage"></image>
+                </block>
+            </view>
+        </view>
+
+    </view>
+</view>
+
+
+<view class="cell">
+    <view class="cell-frame">
+        <view class="cell-top" hidden="{{true}}">
+            <view class="changjing">工作</view>
+            <view class="time">1天前</view>
+                <view wx:if="{{7>6}}">
+                    <image src="../../images/星.png" class="shoucangStarIcon" hidden="{{true}}"></image>
+                </view>
+                <view wx:else>
+                    <image src="../../images/星-selected.png" class="shoucangStarIcon" hidden="{{false}}"></image>
+                </view>
+
+        </view>
+
+        <view class="neirong" hidden="{{false}}">
+            <text class="neirong-holder">{{"挣得钱三分之二花在买衣服鞋子包包化妆品，三分之一平常吃喝玩，女生不都是这样吗？"}}</text>
+        </view>
+
+        <view class="line" hidden="{{false}}"></view>
+
+        <view class="jingdian-tell" hidden="{{false}}">
+            <text class="jingdian-tell-holder">{{"中学门口，校长和刚退休的老师打招呼：咋啦？退休了还不舍得离开学校，来转转？退休女老师：别提了，太丢人了，儿子不听话，班主任让来一趟......."}}</text>
+        </view>
+
+        <view class="operate-area">
+            <block wx:for="{{operate}}">
+                <view class="find">
+                    <image src="{{item.image}}" class="find-image"></image>
+                    <text class="find-data" class="find-text">{{item.num}}</text>
+                </view>
+            </block>
+            <text class="back-time" hidden="{{false}}">1天前</text>
+            <view class="editBtn" hidden="{{true}}">编辑</view>
+        </view>
+
+        <view class="zan-holder">
+            <view class="image-holder">
+                <block wx:for="{{zan_images}}">
+                    <image src="{{item.imagePath}}" class="zan-headImage"></image>
+                </block>
+            </view>
+        </view>
+
+    </view>
+</view>
+
+
+<view class="cell">
+    <view class="cell-frame">
+        <view class="cell-top" hidden="{{false}}">
+            <view class="changjing">工作</view>
+            <view class="time">1天前</view>
+                <view wx:if="{{7>6}}">
+                    <image src="../../images/星.png" class="shoucangStarIcon" hidden="{{false}}"></image>
+                </view>
+                <view wx:else>
+                    <image src="../../images/星-selected.png" class="shoucangStarIcon" hidden="{{false}}"></image>
+                </view>
+
+        </view>
+
+        <view class="neirong" hidden="{{false}}">
+            <text class="neirong-holder">{{"挣得钱三分之二花在买衣服鞋子包包化妆品，三分之一平常吃喝玩，女生不都是这样吗？"}}</text>
+        </view>
+
+        <view class="line" hidden="{{true}}"></view>
+
+        <view class="jingdian-tell" hidden="{{true}}">
+            <text class="jingdian-tell-holder">{{"中学门口，校长和刚退休的老师打招呼：咋啦？退休了还不舍得离开学校，来转转？退休女老师：别提了，太丢人了，儿子不听话，班主任让来一趟......."}}</text>
+        </view>
+
+        <view class="operate-area">
+            <block wx:for="{{operate}}">
+                <view class="find">
+                    <image src="{{item.image}}" class="find-image"></image>
+                    <text class="find-data" class="find-text">{{item.num}}</text>
+                </view>
+            </block>
+            <text class="back-time" hidden="{{true}}">1天前</text>
+            <view class="editBtn" hidden="{{false}}">编辑</view>
+        </view>
+
+        <view class="zan-holder" hidden="{{true}}">
+            <view class="image-holder">
+                <block wx:for="{{zan_images}}">
+                    <image src="{{item.imagePath}}" class="zan-headImage"></image>
+                </block>
+            </view>
+        </view>
+
+    </view>
+</view>
+
+
+
+
+
+
+
+
+<view class="cell">
+    <view class="cell-frame">
+        <view class="cell-top" hidden="{{false}}">
+            <view class="changjing">工作</view>
+            <view class="time">1天前</view>
+                <view wx:if="{{5>6}}">
+                    <image src="../../images/星.png" class="shoucangStarIcon" hidden="{{false}}"></image>
+                </view>
+                <view wx:else>
+                    <image src="../../images/星-selected.png" class="shoucangStarIcon" hidden="{{false}}"></image>
+                </view>
+
+        </view>
+
+        <view class="neirong" hidden="{{false}}">
+            <text class="neirong-holder">{{"挣得钱三分之二花在买衣服鞋子包包化妆品，三分之一平常吃喝玩，女生不都是这样吗？"}}</text>
+        </view>
+
+        <view class="line" hidden="{{false}}"></view>
+
+        <view class="jingdian-tell" hidden="{{false}}">
+            <text class="jingdian-tell-holder">{{"中学门口，校长和刚退休的老师打招呼：咋啦？退休了还不舍得离开学校，来转转？退休女老师：别提了，太丢人了，儿子不听话，班主任让来一趟......."}}</text>
+        </view>
+
+        <view class="operate-area">
+            <block wx:for="{{operate}}">
+                <view class="find">
+                    <image src="{{item.image}}" class="find-image"></image>
+                    <text class="find-data" class="find-text">{{item.num}}</text>
+                </view>
+            </block>
+            <text class="back-time" hidden="{{true}}">1天前</text>
+            <view class="editBtn" hidden="{{false}}">编辑</view>
+        </view>
+
+        <view class="zan-holder" hidden="true">
+            <view class="image-holder">
+                <block wx:for="{{zan_images}}">
+                    <image src="{{item.imagePath}}" class="zan-headImage"></image>
+                </block>
+            </view>
+        </view>
+
+    </view>
+</view>

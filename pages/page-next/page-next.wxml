@@ -1,0 +1,17 @@
+
+<view class="content">
+    <view class="top">
+        <view class="top-holder">
+            <view class="remen" wx:for="{{top}}">
+                <image src="{{item.image}}"></image>
+            </view>
+        </view>
+    </view>
+    
+    <view class="jinggaoye">
+        <image src="../../images/哭.png"></image>
+        <view class="text1">{{jinggao}}</view>
+        <view class="text2">{{tishi}}</view>
+    </view>
+</view>
+    
